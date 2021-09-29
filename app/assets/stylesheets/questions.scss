@@ -1,0 +1,29 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+  padding: 0px 16px;
+  font-family: 'Lucida Sans Regular';
+}
+
+.question {
+  padding: 8px;
+  border-left: 8px solid lightgray;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.answer {
+  padding: 8px;
+  border-left: 8px solid lightgray;
+  background-color:rgb(253, 253, 229);
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.link {
+  color: midnightblue;
+  text-decoration: none;
+}
+
+// , 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
