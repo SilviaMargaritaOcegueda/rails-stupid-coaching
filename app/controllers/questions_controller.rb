@@ -1,3 +1,6 @@
+# frozen_string_literal:true
+
+# stupid coaching class
 class QuestionsController < ApplicationController
   def ask
     @question = params[:question]
@@ -6,12 +9,8 @@ class QuestionsController < ApplicationController
   def answer
     @question = params[:question]
 
-    if @question == 'I am going to work'
-      @answer = 'Great!'
-    elsif @question[-1] == "?"
-      @answer = 'Silly question, get dressed and go to work!'
-    else
-      @answer = 'I don\'t care, get dressed and go to work!'
-    end
+    @answer = 'I don\'t care, get dressed and go to work!'
+    @answer = 'Silly question, get dressed and go to work!' if @question[-1] == '?'
+    @answer = 'Great!' if @question == 'I am going to work'
   end
 end

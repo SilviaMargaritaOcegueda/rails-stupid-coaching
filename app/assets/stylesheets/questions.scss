@@ -21,9 +21,11 @@
   margin-bottom: 24px;
 }
 
-.link {
-  color: midnightblue;
-  text-decoration: none;
-}
-
-// , 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+a {
+   color: midnightblue;
+   text-decoration: none;
+   &:hover {
+     color: midnightblue;
+     text-decoration: none;
+   }
+ }
